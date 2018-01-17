@@ -41,8 +41,8 @@ export default class Search extends React.Component{
                     }
                     return false
                 });
-            }} style={{minHeight:40,margin:10,borderWidth:1,borderColor:'red'}}>
-                <Text>{data.description}</Text>
+            }} style={{minHeight:40,margin:10,borderWidth:1,borderColor:'gray',padding:10,backgroundColor:'gray',borderRadius:5}}>
+                <Text style={{color:'white'}}>{data.description}</Text>
             </TouchableOpacity>
         )
     }
@@ -62,8 +62,8 @@ export default class Search extends React.Component{
                     />
                     <TouchableOpacity onPress={()=>{
                         this.getDataGitHub();
-                    }} style={{height:40,marginLeft:10,borderWidth:1,borderColor:'blue',alignItems:'center'}}>
-                        <Text style={{verticalAlign:'center'}}>Search</Text>
+                    }} style={{height:40,marginLeft:10,borderWidth:1,borderColor:'blue',alignItems:'center',alignContent:'center',justifyContent:'center',padding:10,backgroundColor:'blue'}}>
+                        <Text style={{color:'white'}}>Search</Text>
                     </TouchableOpacity>
                 </View>
                 <ListView
